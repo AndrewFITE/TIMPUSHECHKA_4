@@ -1,0 +1,103 @@
+\hypertarget{classCipher}{}\doxysubsection{Класс Cipher}
+\label{classCipher}\index{Cipher@{Cipher}}
+
+
+Шифрование методом Табличной перестановки  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCipher_ab5b9c086b88f55141fe370af7aa11bbf}\label{classCipher_ab5b9c086b88f55141fe370af7aa11bbf}} 
+{\bfseries Cipher} (int k)
+\item 
+string \mbox{\hyperlink{classCipher_a4f043c22914e957ca1eaa5882d9d3487}{get\+Valid\+Text}} (const string \&text)
+\begin{DoxyCompactList}\small\item\em Метод для проверки текста для зашифрования или расшифрования ~\newline
+Все символы не принадлежащие английскому алфавиту удаляются ~\newline
+. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCipher_a90c0f3583ad5a370817af281e179e1cf}{encrypt}} (const string \&text)
+\begin{DoxyCompactList}\small\item\em Зашифрование \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCipher_ac66f6652e4c71e8e4962dfb72c3e057c}{decrypt}} (const string \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Расшифровывание \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Подробное описание}
+Шифрование методом Табличной перестановки 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsubsection{Методы}
+\mbox{\Hypertarget{classCipher_ac66f6652e4c71e8e4962dfb72c3e057c}\label{classCipher_ac66f6652e4c71e8e4962dfb72c3e057c}} 
+\index{Cipher@{Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Cipher@{Cipher}}
+\doxyparagraph{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const string \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Расшифровывание 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em cioher\+\_\+text} & Строка для зашифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCipher_a90c0f3583ad5a370817af281e179e1cf}\label{classCipher_a90c0f3583ad5a370817af281e179e1cf}} 
+\index{Cipher@{Cipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Cipher@{Cipher}}
+\doxyparagraph{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Зашифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & Строка для зашифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCipher_a4f043c22914e957ca1eaa5882d9d3487}\label{classCipher_a4f043c22914e957ca1eaa5882d9d3487}} 
+\index{Cipher@{Cipher}!getValidText@{getValidText}}
+\index{getValidText@{getValidText}!Cipher@{Cipher}}
+\doxyparagraph{\texorpdfstring{getValidText()}{getValidText()}}
+{\footnotesize\ttfamily string Cipher\+::get\+Valid\+Text (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод для проверки текста для зашифрования или расшифрования ~\newline
+Все символы не принадлежащие английскому алфавиту удаляются ~\newline
+. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & строка с сообщением типа string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+строка типа string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & строка пустая \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\item 
+mod\+Alpha\+Cipher.\+cpp\end{DoxyCompactItemize}

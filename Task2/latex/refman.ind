@@ -1,0 +1,28 @@
+\begin{theindex}
+
+  \item {Cipher}, \hyperpage{2}
+    \subitem {decrypt}, \hyperpage{2}
+    \subitem {encrypt}, \hyperpage{3}
+    \subitem {getValidText}, \hyperpage{3}
+  \item {cipher\_error}, \hyperpage{4}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {Cipher}, \hyperpage{2}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {Cipher}, \hyperpage{3}
+
+  \indexspace
+
+  \item {getValidText}
+    \subitem {Cipher}, \hyperpage{3}
+
+  \indexspace
+
+  \item {modAlphaCipher.h}, \hyperpage{5}
+
+\end{theindex}
